@@ -30,13 +30,14 @@
                     시간씩 훈련할 것이다.
                 </label>
                 <div class="btn-wrap">
-                    <button class="start__btn">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+                    <button type="button" class="start__btn">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
                     <img src="./img/click.png" alt="클릭">
                 </div>
             </form>
         </section>
         <!-- 버튼 클릭시 나타나는 결과창 부분 -->
-        <section class="cont-result">
+        <img src="./img/loading.png" alt="로딩중입니다."class="loding__img hidden">
+        <section class="cont-result hidden">
             <h2 class="ir">결과 부분 입니다</h2>
             <p class="want-text">당신은 <strong class="want-result">프로그래밍</strong> 전문가가 되기 위해서</p>
             <p class="time-text">대략 <strong class="time-result">1000</strong> 일 이상 훈련하셔야 합니다! :)</p>
@@ -44,6 +45,16 @@
             <button type="button" class="share__btn">공유하기</button>
         </section>
     </main>
+
+    <!-- 훈련하러 가기 버튼 클릭시 나타나는 모달 창 -->
+    <section class="modal hidden">
+        <div class="modal-wrap">
+            <h2 class="modal__title">화이팅!!♥♥♥</h2>
+            <span class="modal__sub-title">당신의 꿈을 응원합니다!</span>
+            <img src="./img/licat.png" alt="응원하는 라이캣" class="modal__img">
+            <button class="modal__btn">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+        </div>
+    </section>
 
     <footer>
         <img src="./img/logo.png" alt="weniv" class="footer-logo">

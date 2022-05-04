@@ -5,7 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "GmarketSansBold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
@@ -13,7 +12,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
@@ -21,7 +19,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -33,9 +30,17 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
       format("opentype");
 }
+/* animation */
+@keyframes loding {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* style */
-
 body {
   background-color: #5b2386;
   color: #fff;
@@ -111,7 +116,8 @@ header .title__img {
 
 .btn-wrap .start__btn,
 .cont-result .gogo__btn,
-.cont-result .share__btn {
+.cont-result .share__btn,
+.modal__btn {
   font-family: "GmarketSansBold";
   padding: 21px 49px;
   background-color: #fcee21;
@@ -140,6 +146,7 @@ footer {
   font-size: 12px;
   line-height: 17px;
 }
+
 /* 결과 부분 */
 .cont-result {
   text-align: center;
@@ -158,6 +165,7 @@ footer {
   font-family: "GmarketSansBold";
   font-size: 72px;
   vertical-align: middle;
+  margin: 0 10px;
 }
 
 .cont-result .share__btn {
@@ -165,8 +173,59 @@ footer {
   margin: 130px 18px;
 }
 
-/* 반응형 */
+.loding__img {
+  display: block;
+  width: 120px;
+  margin:0 auto 100px;
+  animation: loding 2s infinite linear;
+}
 
+/* modal */
+.modal {
+  width: 800px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 76px 0 68px;
+}
+
+.modal__title,
+.modal__sub-title {
+  font-family: "OTEnjoystoriesBA";
+  font-weight: 700;
+  color:#5B2386;
+}
+
+.modal__title {
+  font-size: 96px;
+}
+
+.modal__sub-title {
+  font-size: 36px;
+  margin-top: 4px;
+}
+
+.modal__img {
+  width: 433px;
+  margin: 29px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* 반응형 */
 @media screen and (max-width: 394px) {
   body {
     padding: 0 38px;
