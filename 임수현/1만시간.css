@@ -46,6 +46,7 @@ header .title-txt{
     font-size: 36px;
     color: #F5DF4D;
     text-align: center;
+    margin-top: 46px;
 }
 .detail-txt{
     font-family: 'GmarketSansMedium';
@@ -110,7 +111,7 @@ header .title-txt{
     font-size: 24px;
     font-family: 'GmarketSansMedium';
 }
-.cheer-txt .job, .minute{
+strong.job, strong.minute{
     font-size: 74px;
     font-family: 'GmarketSansBold';
 }
@@ -147,7 +148,7 @@ input[type="number"]::-webkit-inner-spin-button {
     max-width: 942px;
     padding: 76px 146px 68px;
     position: absolute;
-    margin: -800px 0 0 550px;
+    margin: -800px 0 0 950px;
 }
 .modal-screen h2, .modal-screen p{
     font-family: 'OTEnjoystoriesBA';
@@ -194,10 +195,41 @@ footer img{
     }
     header .title-txt{
         background-size: 130px , 270px;
-        background-position: center;
-        width: 700px;
-        height: 300px;
-        text-align: center;
+        width: 400px;
+        height: 130px;
+        margin-top: 40px;
+    }
+    .first-cheer{
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    .detail-txt{
+        font-size: 16px;
+        margin: 65px auto;
+    }
+    .decision,.decision input{
+        font-size: 14px;
+    }
+    .decision input{
+        height: 30px;
+    }
+    .question{
+        font-size: 14px;
+        width: 240px;
+        border-radius: 13px;
+        padding: 18px 30px;
+    }
+    .question::after{
+        margin: -30px 0 0 80px;
+    }
+    strong.job, strong.minute{
+        font-size: 24px;
+    }
+    .only-txt, .go, .share{
+        font-size: 14px;
+    }
+    .go, .share{
+        padding: 13px 17px;
     }
     .modal-screen.on{
         max-width: 330px;
@@ -211,5 +243,8 @@ footer img{
     }
     .modal-screen.on .one-txt{
         display: none;
+    }
+    footer{
+        font-size: 9px;
     }
 }
